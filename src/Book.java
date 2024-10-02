@@ -1,25 +1,27 @@
+import java.util.Objects;
+
 public class Book {
 
     private String name;
-    private String Author;
+    private Author author;
     private int date;
 
-    public Book(String name, String Author, int date) {
+    public Book(String name, Author author, int date) {
         this.name = name;
-        this.Author = Author;
+        this.author = author;
         this.date = date;
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
-    public String getAuthor() {
-        return this.Author;
+    public Author getAuthor() {
+        return author;
     }
 
-    public int getDatee() {
-        return this.date;
+    public int getDate() {
+        return date;
     }
 
     public void setDate(int date) {

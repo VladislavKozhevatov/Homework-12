@@ -1,18 +1,22 @@
+import java.util.Objects;
+
 public class Author {
 
     private String authorFirstName;
-    private String AuthorSecondName;
+    private String authorSecondName;
 
-    public Author(String authorFirstName, String AuthorSecondName) {
+
+    public Author(String authorFirstName, String authorSecondName) {
         this.authorFirstName = authorFirstName;
-        this.AuthorSecondName = AuthorSecondName;
+        this.authorSecondName = authorSecondName;
     }
 
     public String getAuthorFirstName() {
-        return this.authorFirstName;
+        return authorFirstName;
     }
 
     public String getAuthorSecondName() {
-        return this.AuthorSecondName;
+        return authorSecondName;
+
     }
 }
